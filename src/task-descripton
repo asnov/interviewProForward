@@ -1,0 +1,107 @@
+Required language: Typescript.
+
+// Task 1 //
+
+Look for rifle.ts file in src folder which exports Rifle class.
+Rifle class describes rifle.
+Now we need additional weapon type: the automatic rifle.
+Implement AutomaticRifle class in automatic-rifle.ts file (src folder).
+
+Requirements:
+1.  The automatic rifle uses burst fire
+    (every call of fire function does 3 shots - number of shots).
+
+2.  The number of shots is the hard-coded static constant of
+    AutomaticRifle class.
+
+3.  If the number of the available shots is less than the number of shots
+    Console should write message “Empty.” and stop the execution of the method.
+
+4.  After every shot, console should get the message
+    “Shot. Shots left 3” (different number of shots with every shot)
+
+5.  You can’t load more shots than maximum magazine capacity.
+
+6.  If possible, do it to create the automatic rifle
+    with unlimited maximum magazine capacity.
+
+Adapt your class in test-rifle.ts file.
+Run build.
+Run test-rifle.js.
+Console output should be the following:
+
+Shoot. Shots left 3
+Shoot. Shots left 2
+Shoot. Shots left 1
+Shoot. Shots left 0
+Empty.
+Shoot. Shots left 2
+Shoot. Shots left 1
+Shoot. Shots left 0
+Empty.
+Shoot. Shots left 5
+Shoot. Shots left 4
+Shoot. Shots left 3
+Shoot. Shots left 2
+Shoot. Shots left 1
+Shoot. Shots left 0
+Shoot. Shots left 2
+Shoot. Shots left 1
+Shoot. Shots left 0
+Empty.
+
+
+
+
+// Task 2 //
+
+Implement HeroImpl class.
+
+Requirements:
+1.  The hero can use Rifle and AutomaticRifle.
+
+2.  HeroImpl class implements Hero interface (src\hero.ts file).
+
+3.  The hero can’t use more than one rifle at the time. 
+
+
+
+
+// Task 3 //
+Allow creating only one instance of HeroImpl class using Singleton pattern. 
+
+
+
+
+// Task 4 //
+Implement sort array function using “Quicksort” algorithm.
+
+Requirements:
+Sort array in file to-sort.ts and output result into console.
+
+Right console output:
+
+[ 1,
+3,
+4,
+5,
+11,
+11,
+11,
+13,
+17,
+22,
+55,
+77,
+88,
+99,
+99,
+99,
+101,
+107,
+111,
+111,
+112,
+113,
+115,
+216 ]
