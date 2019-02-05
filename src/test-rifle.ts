@@ -1,6 +1,6 @@
 import { AutomaticRifle } from "./automatic-rifle";
 
-const testAutomaticRifle = function (automaticRifle: any): void {
+const testAutomaticRifle = function (automaticRifle: AutomaticRifle): void {
   automaticRifle.load(6);
   automaticRifle.fire();
   automaticRifle.fire();
