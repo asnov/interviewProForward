@@ -46,3 +46,10 @@
         - should decrease the number of available shots
         - should must report if ammo runs out
         - should print console message every time
+
+- Automatic rifle
+    - uses burst fire
+        - every call of fire function does 3 shots - number of shots
+    - The number of shots is the hard-coded static constant of AutomaticRifle class
+    - If the number of the available shots is less than the number of shots
+        - Console should write message “Empty.” and stop the execution of the method
